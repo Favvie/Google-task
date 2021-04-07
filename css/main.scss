@@ -18,7 +18,7 @@ nav {
     //margin-top: 1.5em;    
     //float: right;
     //why does float make the nav bar come down?
-    //background-color: red;
+    
 
     a {
         color: rgba(0,0,0, 0.87);
@@ -135,8 +135,7 @@ nav {
         margin-top: 30px;
         text-align: center;
         color: #111;
-        // width: 810px;
-        height: 250px;
+        
         
        .langs {
         margin-top: 2em;
@@ -157,10 +156,8 @@ footer {
     bottom: 0;
     width: 100%;
     font-size: 16px;
-    padding-left: 1em;
     background: #F2F2F2;
-    //margin-top: 14.5em;
-   
+    
     a {
         padding: 1em;
         color: #5F6368;
@@ -170,6 +167,7 @@ footer {
 
 .footer-top {
     padding: 1em;
+    padding-left: 3em;
     color: rgba(0,0,0, 0.54);
     border-bottom: 1px solid #ddd;
 
@@ -177,7 +175,7 @@ footer {
 
 .footer-bottom {
     display: flex;
-    //padding: 1em;
+    padding: 0 2em;
     justify-content: space-between;
 }
 .midi {
@@ -198,7 +196,6 @@ footer {
     .footer-bottom {
         position: relative;
         justify-content: space-evenly;
-        // flex-wrap: wrap;
         text-align: center;
     }
     .midi {
@@ -209,14 +206,10 @@ footer {
 
     .left {
         margin-top: 2em;
-        // display: flex;
-        // justify-content: flex-start;
     }
 
     .right {
         margin-top: 2em;
-        // display: flex;
-        // justify-content: flex-end;
     }
 
     .section-1{
