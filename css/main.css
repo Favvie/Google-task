@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@350&display=swap");
+* {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav a {
+  color: rgba(0, 0, 0, 0.87);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 16px;
+  font-weight: 350;
+  display: inline-block;
+}
+
+nav #google-dots {
+  width: 25px;
+  height: 25px;
+  margin: auto 16px;
+  cursor: pointer;
+}
+
+nav #account-circle {
+  width: 42px;
+  height: 42px;
+  margin-top: .5em;
+  margin-right: 20px;
+}
+
+.section-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.section-1 #google-image {
+  display: block;
+  margin: 0px auto;
+  margin-top: 9em;
+}
+
+.section-1 .s-box {
+  width: 580px;
+  position: relative;
+  margin: 0px auto;
+  text-align: center;
+  margin-top: -8px;
+}
+
+.section-1 .s-box .search-bar {
+  display: block;
+  border: 1px solid #ddd;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 16px;
+  padding: 13px;
+  padding-left: 45px;
+  border-radius: 25px;
+  width: 100%;
+  margin-top: 2em;
+  -webkit-transition: -webkit-box-shadow 100ms;
+  transition: -webkit-box-shadow 100ms;
+  transition: box-shadow 100ms;
+  transition: box-shadow 100ms, -webkit-box-shadow 100ms;
+  outline: none;
+}
+
+.section-1 .s-box .search-bar:hover {
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.05), 0 0 2px rgba(0, 0, 0, 0.05), 0 0 3px rgba(0, 0, 0, 0.05), 0 0 4px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.05), 0 0 4px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.05), 0 0 2px rgba(0, 0, 0, 0.05), 0 0 3px rgba(0, 0, 0, 0.05), 0 0 4px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.05), 0 0 4px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.section-1 .s-box .search-icon {
+  width: 25px;
+  opacity: .7;
+  position: absolute;
+  top: 14px;
+  left: 15px;
+}
+
+.section-1 .s-box .vs-icon {
+  width: 14px;
+  position: absolute;
+  top: 15px;
+  right: -30px;
+}
+
+.section-1 .s-box button {
+  padding: .7em 1.5em;
+  border: none;
+  font-size: 15px;
+  margin: .3em;
+  margin-top: 28px;
+  background: #F8F9FA;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.section-1 .s-box button:hover {
+  border: 1px solid #aaa;
+}
+
+.section-1 .lang {
+  margin-top: 30px;
+  text-align: center;
+  color: #111;
+}
+
+.section-1 .lang p {
+  margin-top: 2em;
+  font-size: 14px;
+}
+
+.section-1 .lang p a {
+  padding-right: 10px;
+  color: #1A0DAB;
+}
+
+footer {
+  font-size: 16px;
+  padding-left: 1em;
+  background: #F2F2F2;
+  margin-top: 14.5em;
+}
+
+footer a {
+  padding-right: 1.2em;
+  color: #5F6368;
+  display: inline-block;
+}
+
+.footer-top {
+  padding: 1em;
+  color: rgba(0, 0, 0, 0.54);
+  border-bottom: 1px solid #ddd;
+}
+
+.footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=main.css.map */

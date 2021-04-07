@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@350&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    //width: 30%;
+    //margin: auto pushes everything to the right
+    // margin-left   : auto;
+    //margin-top: 1.5em;    
+    //float: right;
+    //why does float make the nav bar come down?
+    //background-color: red;
+
+    a {
+        color: rgba(0,0,0, 0.87);
+        cursor: pointer;
+        font-size: 14px;
+        //margin-top: .2em;
+        padding: 16px;
+        font-weight: 350;
+        display: inline-block;
+    }
+    
+    
+
+    #google-dots {
+        width:25px;
+        height: 25px;
+        // margin-top: .9em;
+        // margin-right: 16px;
+        // margin-left: 16px;
+        margin: auto 16px;
+        cursor: pointer;
+    }
+   
+    #account-circle {
+        width:42px;
+        height: 42px;
+        margin-top: .5em;
+        margin-right:  20px;
+        // margin-left: 16px;
+    }
+}
+
+
+.section-1 {
+    // width: 50%;
+    // margin: auto;
+    // text-align: center;
+    flex: 1;
+    
+    #google-image {
+        display: block;
+        margin: 0px auto;
+        margin-top: 9em;
+    }
+    
+    .s-box {
+        width: 580px;
+        position: relative;
+        margin: 0px auto;
+        text-align: center;
+        margin-top: -8px;
+        .search-bar {
+            display: block;
+            border: 1px solid #ddd;
+            color: rgba(0,0,0, 0.87);
+            font-size: 16px;
+            padding: 13px;
+            padding-left: 45px;
+            border-radius: 25px;
+            width: 100%;
+            margin-top: 2em;
+            transition: box-shadow 100ms;   
+            outline: none;
+            //box-shadow: none; 
+                
+        }
+
+        .search-bar:hover {
+            border: 1px solid #fff;
+            box-shadow: 0 0 2px rgba(0,0,0, 0.05),
+                        0 0 2px rgba(0,0,0, 0.05),
+                        0 0 3px rgba(0,0,0, 0.05),
+                        0 0 4px rgba(0,0,0, 0.05),
+                        0 0 5px rgba(0,0,0, 0.05),
+                        0 0 4px rgba(0,0,0, 0.05),
+                        0 0 5px rgba(0,0,0, 0.05);
+        }
+        
+        .search-icon {
+            width: 25px;
+            opacity: .7;
+            position: absolute;
+            top: 14px;
+            left: 15px;
+        }
+ 
+        .vs-icon {
+            width: 14px;
+            position: absolute;
+            top: 15px;
+            right: -30px;
+        }
+
+        button {
+            padding: .7em 1.5em;
+            border: none;
+            font-size: 15px;
+            margin: .3em;
+            margin-top: 28px;
+            background: #F8F9FA;
+            border-radius: 4px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        button:hover {
+            border: 1px solid #aaa;
+        }
+    }
+
+    .lang {
+        margin-top: 30px;
+        text-align: center;
+        color: #111;
+        
+        p {
+            margin-top: 2em;
+            font-size: 14px;
+
+            a {
+                padding-right: 10px;
+                color: #1A0DAB;   
+            }
+        }
+    }
+}
+
+footer {
+    font-size: 16px;
+    padding-left: 1em;
+    background: #F2F2F2;
+    margin-top: 14.5em;
+   
+    a {
+        padding-right: 1.2em;
+        color: #5F6368;
+        display: inline-block;
+    }    
+}
+
+.footer-top {
+    padding: 1em;
+    color: rgba(0,0,0, 0.54);
+    border-bottom: 1px solid #ddd;
+}
+
+.footer-bottom {
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+}
+   
