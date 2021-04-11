@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@350&display=swap');
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -9,13 +8,15 @@ a:hover {
     text-decoration: underline;
 }
 
+.content{
+    width: 100%;
+}
 nav {
     display: flex;
     justify-content: flex-end;
-    //width: 30%;
     //margin: auto pushes everything to the right
     // margin-left   : auto;
-    //margin-top: 1.5em;    
+    padding-top: .5em;    
     //float: right;
     //why does float make the nav bar come down?
     
@@ -23,45 +24,41 @@ nav {
     a {
         color: rgba(0,0,0, 0.87);
         cursor: pointer;
-        font-size: 14px;
-        //margin-top: .2em;
-        padding: 16px;
+        font-size: 13px;
+        padding-left: 15px;
+        padding-top: 13px;
         font-weight: 350;
         display: inline-block;
-    }
-    
-    
+    } 
 
     #google-dots {
-        width:25px;
-        height: 25px;
-        // margin-top: .9em;
-        // margin-right: 16px;
-        // margin-left: 16px;
-        margin: auto 16px;
+        width:22px;
+        height: 22px;
+        padding: auto 0px;
+        padding-top: .6em;
+        padding-left: 30px;
         cursor: pointer;
     }
    
     #account-circle {
-        width:42px;
-        height: 42px;
-        margin-top: .5em;
-        margin-right:  20px;
-        // margin-left: 16px;
+        width:35px;
+        height: 35px;
+        padding-top: .3em;
+        padding-right:  25px;
+        padding-left: 20px;
     }
 }
 
 
 .section-1 {
-    // width: 50%;
-    // margin: auto;
+    width: 100%;
     text-align: center;
     flex: 1;
     
     #google-image {
         display: block;
         margin: 0px auto;
-        margin-top: 9em;
+        margin-top: 5em;
     }
     
     .s-box {
@@ -74,15 +71,24 @@ nav {
             display: block;
             border: 1px solid #ddd;
             color: rgba(0,0,0, 0.87);
-            font-size: 16px;
-            padding: 13px;
-            padding-left: 45px;
+            padding: 15px 19px;
+            padding-bottom: 8px;
             border-radius: 25px;
-            width: 100%;
+            width: 93%;
             margin-top: 2em;
             transition: box-shadow 100ms;   
             outline: none;
-            //box-shadow: none; 
+
+            input {
+                border: none;
+                outline: none;
+                height: 25px;
+                width: 90%;
+                margin-top: -47px;
+                padding-top: 5px;
+                margin-left: -5px;
+                font-size: 16px;
+            }
                 
         }
 
@@ -98,31 +104,34 @@ nav {
         }
         
         .search-icon {
-            width: 25px;
+            display: block;
+            width: 20px;
             opacity: .4;
             position: absolute;
             top: 14px;
             left: 15px;
+            padding-right: 50px;
         }
  
         .vs-icon {
-            width: 14px;
+            width: 13px;
             position: absolute;
-            top: 15px;
-            right: -30px;
+            top: 13px;
+            right: 20px;
             cursor: pointer;
         }
 
         button {
-            padding: .7em 1.5em;
+            padding: .6em 1.5em;
             border: none;
-            font-size: 15px;
+            font-size: 14px;
             margin: .3em;
             margin-top: 28px;
             background: #F8F9FA;
             border-radius: 4px;
             cursor: pointer;
             display: inline-block;
+            opacity: .9;
             
         }
 
@@ -139,7 +148,7 @@ nav {
         
        .langs {
         margin-top: 2em;
-        font-size: 14px;
+        font-size: 13px;
 
         a {
             padding-right: 10px;
@@ -155,19 +164,20 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    font-size: 16px;
+    font-size: 14px;
     background: #F2F2F2;
     
     a {
         padding: 1em;
         color: #5F6368;
         display: inline-block;
+        opacity: .9;
     }    
 }
 
 .footer-top {
-    padding: 1em;
-    padding-left: 3em;
+    padding: 1.1em;
+    padding-left: 2em;
     color: rgba(0,0,0, 0.54);
     border-bottom: 1px solid #ddd;
 
@@ -175,49 +185,98 @@ footer {
 
 .footer-bottom {
     display: flex;
-    padding: 0 2em;
+    padding: 0 1em;
     justify-content: space-between;
 }
 .midi {
     position: relative;
+    text-align: center;
+    margin-left: -163px;
     .leaf{
         position: absolute;
-        width: 10px;
-        top:21px;
+        width: 12px;
+        top:14px;
+        left: -5px;
         
     }
 }
 
 
-@media screen and (max-width: 1200px) {
-    footer {
-        font-size: 14px;
-    }
+@media only screen and (max-width: 1200px) {
     .footer-bottom {
         position: relative;
         justify-content: space-evenly;
         text-align: center;
+        padding: 0;
+    }
+
+    .footer-top {
+        margin-bottom: 50px;
     }
     .midi {
         width: 100%;
-        top: 0;
+        top: -50px;
         position: absolute;
+        margin-left: 83%;
+        padding-left: 0;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left, .right {
+        display: flex;
+        //flex:100%;
+        flex-direction: row;
+        //text-align: center;
     }
 
-    .left {
-        margin-top: 2em;
+    .midi {
+        margin-left: 72%;
     }
 
-    .right {
-        margin-top: 2em;
-    }
+    .section-1 .s-box{
+        width: 100%;
 
-    .section-1{
-        text-align: center;
-    }
+        .search-bar {
+            width: 85%;
+            display: block;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
 
-    .leaf {
-        top: 18px;
+        .search-icon {
+            left: 30px;
+        }
+
+        .vs-icon {
+            right: 9%;
+        }
     }
-    
+}   
+
+@media screen and (max-width: 500px){
+    .section-1 .s-box{
+        width: 100%;
+        .search-bar {
+            width: 85%;
+            display: block;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+
+        .search-icon {
+            left: 30px;
+        }
+
+        .vs-icon {
+            right: 7.5%;
+        }
+    }
 }

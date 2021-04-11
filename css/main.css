@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@350&display=swap");
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Arial', sans-serif;
   text-decoration: none;
   margin: 0;
   padding: 0;
@@ -10,6 +9,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.content {
+  width: 100%;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,32 +20,38 @@ nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-top: .5em;
 }
 
 nav a {
   color: rgba(0, 0, 0, 0.87);
   cursor: pointer;
-  font-size: 14px;
-  padding: 16px;
+  font-size: 13px;
+  padding-left: 15px;
+  padding-top: 13px;
   font-weight: 350;
   display: inline-block;
 }
 
 nav #google-dots {
-  width: 25px;
-  height: 25px;
-  margin: auto 16px;
+  width: 22px;
+  height: 22px;
+  padding: auto 0px;
+  padding-top: .6em;
+  padding-left: 30px;
   cursor: pointer;
 }
 
 nav #account-circle {
-  width: 42px;
-  height: 42px;
-  margin-top: .5em;
-  margin-right: 20px;
+  width: 35px;
+  height: 35px;
+  padding-top: .3em;
+  padding-right: 25px;
+  padding-left: 20px;
 }
 
 .section-1 {
+  width: 100%;
   text-align: center;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -52,7 +61,7 @@ nav #account-circle {
 .section-1 #google-image {
   display: block;
   margin: 0px auto;
-  margin-top: 9em;
+  margin-top: 5em;
 }
 
 .section-1 .s-box {
@@ -67,17 +76,27 @@ nav #account-circle {
   display: block;
   border: 1px solid #ddd;
   color: rgba(0, 0, 0, 0.87);
-  font-size: 16px;
-  padding: 13px;
-  padding-left: 45px;
+  padding: 15px 19px;
+  padding-bottom: 8px;
   border-radius: 25px;
-  width: 100%;
+  width: 93%;
   margin-top: 2em;
   -webkit-transition: -webkit-box-shadow 100ms;
   transition: -webkit-box-shadow 100ms;
   transition: box-shadow 100ms;
   transition: box-shadow 100ms, -webkit-box-shadow 100ms;
   outline: none;
+}
+
+.section-1 .s-box .search-bar input {
+  border: none;
+  outline: none;
+  height: 25px;
+  width: 90%;
+  margin-top: -47px;
+  padding-top: 5px;
+  margin-left: -5px;
+  font-size: 16px;
 }
 
 .section-1 .s-box .search-bar:hover {
@@ -87,31 +106,34 @@ nav #account-circle {
 }
 
 .section-1 .s-box .search-icon {
-  width: 25px;
+  display: block;
+  width: 20px;
   opacity: .4;
   position: absolute;
   top: 14px;
   left: 15px;
+  padding-right: 50px;
 }
 
 .section-1 .s-box .vs-icon {
-  width: 14px;
+  width: 13px;
   position: absolute;
-  top: 15px;
-  right: -30px;
+  top: 13px;
+  right: 20px;
   cursor: pointer;
 }
 
 .section-1 .s-box button {
-  padding: .7em 1.5em;
+  padding: .6em 1.5em;
   border: none;
-  font-size: 15px;
+  font-size: 14px;
   margin: .3em;
   margin-top: 28px;
   background: #F8F9FA;
   border-radius: 4px;
   cursor: pointer;
   display: inline-block;
+  opacity: .9;
 }
 
 .section-1 .s-box button:hover {
@@ -127,7 +149,7 @@ nav #account-circle {
 
 .section-1 .lang .langs {
   margin-top: 2em;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .section-1 .lang .langs a {
@@ -139,7 +161,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  font-size: 16px;
+  font-size: 14px;
   background: #F2F2F2;
 }
 
@@ -147,11 +169,12 @@ footer a {
   padding: 1em;
   color: #5F6368;
   display: inline-block;
+  opacity: .9;
 }
 
 .footer-top {
-  padding: 1em;
-  padding-left: 3em;
+  padding: 1.1em;
+  padding-left: 2em;
   color: rgba(0, 0, 0, 0.54);
   border-bottom: 1px solid #ddd;
 }
@@ -160,7 +183,7 @@ footer a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 2em;
+  padding: 0 1em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -168,41 +191,99 @@ footer a {
 
 .midi {
   position: relative;
+  text-align: center;
+  margin-left: -163px;
 }
 
 .midi .leaf {
   position: absolute;
-  width: 10px;
-  top: 21px;
+  width: 12px;
+  top: 14px;
+  left: -5px;
 }
 
-@media screen and (max-width: 1200px) {
-  footer {
-    font-size: 14px;
-  }
+@media only screen and (max-width: 1200px) {
   .footer-bottom {
     position: relative;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     text-align: center;
+    padding: 0;
+  }
+  .footer-top {
+    margin-bottom: 50px;
   }
   .midi {
     width: 100%;
-    top: 0;
+    top: -50px;
     position: absolute;
+    margin-left: 83%;
+    padding-left: 0;
+    text-align: left;
   }
-  .left {
-    margin-top: 2em;
+}
+
+@media screen and (max-width: 670px) {
+  .footer-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .right {
-    margin-top: 2em;
+  .left, .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-  .section-1 {
-    text-align: center;
+  .midi {
+    margin-left: 72%;
   }
-  .leaf {
-    top: 18px;
+  .section-1 .s-box {
+    width: 100%;
+  }
+  .section-1 .s-box .search-bar {
+    width: 85%;
+    display: block;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .section-1 .s-box .search-icon {
+    left: 30px;
+  }
+  .section-1 .s-box .vs-icon {
+    right: 9%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-1 .s-box {
+    width: 100%;
+  }
+  .section-1 .s-box .search-bar {
+    width: 85%;
+    display: block;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .section-1 .s-box .search-icon {
+    left: 30px;
+  }
+  .section-1 .s-box .vs-icon {
+    right: 7.5%;
   }
 }
 /*# sourceMappingURL=main.css.map */
